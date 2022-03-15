@@ -103,9 +103,27 @@
     }
 }
 
+/* ESERCIZIO 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover{
+    animation: halfSpin 1s linear;
+}
+@keyframes halfSpin {
+    0%{
+        transform: rotate(0);
+    }
+
+    80%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -135,3 +153,35 @@
     width: 60px;
     height: 20px;
 }
+
+/* ESERCIZIO 12 */
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: ex12Bottom 1.5s linear;
+}
+@keyframes ex12Bottom{
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: 68%
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: ex12Top 1.5s linear;
+}
+@keyframes ex12Top{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 68%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+
